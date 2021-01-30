@@ -9,9 +9,8 @@ public class Main {
 //        Example_2();
         //Example_10();
         //Example_7();
-        Example_1x();
-        //Example_Art();
-
+//        Example_1x();
+        Example_Art();
     }
 
     private static void Example_Art() {
@@ -20,9 +19,9 @@ public class Main {
         System.out.println("( >__< )");
         System.out.println("^^ ~~ ^^");
 
-        //System.out.println("/\__/\");
-        //System.out.println("(=^*^=)");
-        //System.out.println("(")(")_/");
+        System.out.println("/\\__/\\");
+        System.out.println("(=^*^=)");
+        System.out.println(" (\")(\")_/");
     }
 
     private static void Example_1x() {
