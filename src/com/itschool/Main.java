@@ -10,7 +10,43 @@ public class Main {
         //Example_10();
         //Example_7();
 //        Example_1x();
-        Example_Art();
+//        Example_Art();
+
+        Example_6();
+        Example_95();
+    }
+
+    private static void Example_95() {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        if (n > 99999 && n < 1000000) {
+            int one = n % 10;
+            int tens = n % 100 / 10;
+            int hundreds = n % 1000 / 100;
+            int thousands = n % 10000 / 1000;
+            int tenThousands = n % 100000 / 10000;
+            int hundredsThousands = n / 100000;
+            if ((one + tens + hundreds) == (thousands + tenThousands + hundredsThousands)) {
+                System.out.println("Щасливый билет!");
+            } else {
+                System.out.println("Упс, не в этот раз");
+            }
+        }
+        else
+        {
+            System.out.println("Число не 6-значное");
+        }
+    }
+
+    private static void Example_6() {
+        float speedKilometers = 6.5f, speedMeters = 1.8f + 0.0055556297f;
+        float km2ms = speedKilometers * 1000 / 3600;
+        if (km2ms > speedMeters) {
+            System.out.println("kMs > Ms by " + (km2ms - speedMeters));
+        } else if (km2ms < speedMeters) {
+            System.out.println("kMs < Ms by " + (speedMeters - km2ms));
+        } else
+            System.out.println("kMs = Ms");
     }
 
     private static void Example_Art() {
